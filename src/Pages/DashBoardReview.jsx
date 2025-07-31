@@ -17,7 +17,7 @@ const DashboardReview = () => {
 
   const fetchReviews = async () => {
     try {
-      const res = await axios.get("https://freshcart-backend-9t2w.vercel.app/allreview");
+      const res = await axios.get("https://freshcart1-backend.vercel.app/allreview");
       if (res.data.status) {
         setReviews(res.data.ourreview);
       }
@@ -28,7 +28,7 @@ const DashboardReview = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://freshcart-backend-9t2w.vercel.app/products");
+      const res = await axios.get("https://freshcart1-backend.vercel.app/products");
       if (res.data.status) {
         setProducts(res.data.dataproduct);
       }

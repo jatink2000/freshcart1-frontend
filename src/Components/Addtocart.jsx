@@ -18,7 +18,7 @@ const ShopCart = () => {
   }, []);
 
   let cartdata = () => {
-    axios.get("https://freshcart-backend-9t2w.vercel.app/allcartitem").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/allcartitem").then((res) => {
         if (res.data.status) {
           setCartItems(res.data.ourcartitem);
         }
@@ -47,7 +47,7 @@ const ShopCart = () => {
     let removecartitem = (item) => {
       //    console.log(itemid)
       axios
-        .post("https://freshcart-backend-9t2w.vercel.app/removecartitem", item)
+        .post("https://freshcart1-backend.vercel.app/removecartitem", item)
         .then((res) => {
           if (res.data.status) {
             alert("remove item");
@@ -65,7 +65,7 @@ const ShopCart = () => {
     let increasequantity = () => {
       setquantity(++quantity);
 
-      axios.post("https://freshcart-backend-9t2w.vercel.app/updatequantity", { quantity, data });
+      axios.post("https://freshcart1-backend.vercel.app/updatequantity", { quantity, data });
 
       window.location.reload();
     };
@@ -73,7 +73,7 @@ const ShopCart = () => {
     let decreasequantity = () => {
       setquantity(--quantity);
 
-      axios.post("https://freshcart-backend-9t2w.vercel.app/updatequantity", { quantity, data });
+      axios.post("https://freshcart1-backend.vercel.app/updatequantity", { quantity, data });
       window.location.reload();
     };
 
@@ -220,7 +220,7 @@ export default ShopCart;
 //   }), []
 
 //   let addtocartitem = () => {
-//     axios.get("https://freshcart-backend-9t2w.vercel.app/addtocartproduct").then((res) => {
+//     axios.get("https://freshcart1-backend.vercel.app/addtocartproduct").then((res) => {
 //       if (res.data.status) {
 //         setaddtocart(res.data.addtocartproduct)
 //       }
@@ -242,7 +242,7 @@ export default ShopCart;
 //     }).then((result) => {
 //       if (result.isConfirmed) {
 
-//         axios.post("https://freshcart-backend-9t2w.vercel.app/deleteaddtocartproduct", item).then((res) => {
+//         axios.post("https://freshcart1-backend.vercel.app/deleteaddtocartproduct", item).then((res) => {
 //         if (res.data.status) {
 //           Swal.fire({
 //             title: "Delete Product !",

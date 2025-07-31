@@ -23,7 +23,7 @@ function SignUp() {
 
 
   let signupbtn = () => {
-  axios.post("https://freshcart-backend-9t2w.vercel.app/signup", {signupdata} ).then((res) => {
+  axios.post("https://freshcart1-backend.vercel.app/signup", {signupdata} ).then((res) => {
       if (res.data.status) {
         Swal.fire({
           title: "Signup Success !",

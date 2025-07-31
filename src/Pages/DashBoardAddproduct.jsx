@@ -23,7 +23,7 @@ function DashBoardAddProduct() {
 
   let productbtn =()=>{
     // console.log(product)
-    axios.post("https://freshcart-backend-9t2w.vercel.app/addproduct", {product}).then((res) => {
+    axios.post("https://freshcart1-backend.vercel.app/addproduct", {product}).then((res) => {
       if (res.data.status) {
         alert("add")
 

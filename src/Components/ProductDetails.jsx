@@ -27,7 +27,7 @@ function ProductDetail() {
   //   }, []);
 
   //   const apidata = () => {
-  //     axios.get('https://freshcart-backend-9t2w.vercel.app/products')
+  //     axios.get('https://freshcart1-backend.vercel.app/products')
   //       .then((res) => {
   //         if (res.data.status) {
   //           setData(res.data.ourproduct);
@@ -81,7 +81,7 @@ function ProductDetail() {
   // });
 
   // let apidata = () => {
-  //   axios.get("https://freshcart-backend-9t2w.vercel.app/products").then((res) => {
+  //   axios.get("https://freshcart1-backend.vercel.app/products").then((res) => {
   //       if (res.data.status) {
   //         setdata(res.data.ourproduct);
   //       }
@@ -106,7 +106,7 @@ function ProductDetail() {
 
   let reviewbtn = () => {
     axios
-      .post("https://freshcart-backend-9t2w.vercel.app/productreview", { review, id })
+      .post("https://freshcart1-backend.vercel.app/productreview", { review, id })
       .then((res) => {
         if (res.data.status) {
           Swal.fire({
@@ -133,7 +133,7 @@ function ProductDetail() {
   // wishlist---------------
 
   let wishlist = (a) => {
-    axios.post("https://freshcart-backend-9t2w.vercel.app/wishlist", { a }).then((res) => {
+    axios.post("https://freshcart1-backend.vercel.app/wishlist", { a }).then((res) => {
         if (res.data.status) {
           Swal.fire({
             title: "wishlist Success !",
@@ -150,7 +150,7 @@ function ProductDetail() {
 
 
    let cartbtn=(cartitem)=>{
-    axios.post("https://freshcart-backend-9t2w.vercel.app/cart",{cartitem}).then((res) => {
+    axios.post("https://freshcart1-backend.vercel.app/cart",{cartitem}).then((res) => {
       if (res.data.status) {
          Swal.fire({
             title: "addtocart Success !",
@@ -167,7 +167,7 @@ function ProductDetail() {
 
 
   // let addtocart = (a) => {
-  //   axios.post("https://freshcart-backend-9t2w.vercel.app/addtocart", { a }).then((res) => {
+  //   axios.post("https://freshcart1-backend.vercel.app/addtocart", { a }).then((res) => {
   //       if (res.data.status) {
   //         Swal.fire({
   //           title: "addtocart Success !",
@@ -192,7 +192,7 @@ function ProductDetail() {
 
   let reviewapidata = () => {
     axios
-      .get("https://freshcart-backend-9t2w.vercel.app/allreview")
+      .get("https://freshcart1-backend.vercel.app/allreview")
       .then((res) => {
         if (res.data.status) {
           setreviews(res.data.ourreview);
@@ -225,7 +225,7 @@ function ProductDetail() {
   },[])
 
   let apidata=()=>{
-    axios.get("https://freshcart-backend-9t2w.vercel.app/products").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/products").then((res) => {
           if (res.data.status) {
              setProducts(res.data.dataproduct)
           }

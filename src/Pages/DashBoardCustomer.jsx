@@ -8,7 +8,7 @@ function DashboardCustomer() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://freshcart-backend-9t2w.vercel.app/signup").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/signup").then((res) => {
       setUsers(res.data);
     });
   }, []);

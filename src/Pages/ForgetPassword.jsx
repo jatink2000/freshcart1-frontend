@@ -23,7 +23,7 @@ function ForgetPassword() {
 
   let resetbtn = () => {
     if (resetpassword.password == resetpassword.confirmpassword) {
-      axios.post("https://freshcart-backend-9t2w.vercel.app/resetpassword", { resetpassword }).then((res) => {
+      axios.post("https://freshcart1-backend.vercel.app/resetpassword", { resetpassword }).then((res) => {
         if (res.data.status) {
           Swal.fire({
             title: "Reset password success",

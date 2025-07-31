@@ -20,7 +20,7 @@ function Wishlist() {
 
 
   let wishlistitem = () => {
-    axios.get("https://freshcart-backend-9t2w.vercel.app/wishlistproduct").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/wishlistproduct").then((res) => {
       if (res.data.status) {
         setwishlist(res.data.wishlistproduct)
       }
@@ -45,7 +45,7 @@ function Wishlist() {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        axios.post("https://freshcart-backend-9t2w.vercel.app/deletewishlistproduct", item).then((res) => {
+        axios.post("https://freshcart1-backend.vercel.app/deletewishlistproduct", item).then((res) => {
         if (res.data.status) {
           Swal.fire({
             title: "Delete Product !",
@@ -73,8 +73,8 @@ function Wishlist() {
 
   let cart = (item) => {
 
-    // axios.post("https://freshcart-backend-9t2w.vercel.app/cart", {a })
-    axios.post("https://freshcart-backend-9t2w.vercel.app/cart", { cartitem: item })
+    // axios.post("https://freshcart1-backend.vercel.app/cart", {a })
+    axios.post("https://freshcart1-backend.vercel.app/cart", { cartitem: item })
 
     .then((res) => {
         if (res.data.status) {

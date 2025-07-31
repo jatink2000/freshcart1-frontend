@@ -14,7 +14,7 @@ function Addnewaddress() {
 
 
     let addressbtn = () => {
-    axios.post("https://freshcart-backend-9t2w.vercel.app/addaddress", {address}).then((res) => {
+    axios.post("https://freshcart1-backend.vercel.app/addaddress", {address}).then((res) => {
       if (res.data.status) {
         Swal.fire({
           title: "add address submit !",

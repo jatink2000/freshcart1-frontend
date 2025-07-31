@@ -26,7 +26,7 @@ function Navbar(){
 
 
   let wishlistitem = () => {
-    axios.get("https://freshcart-backend-9t2w.vercel.app/wishlistproduct").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/wishlistproduct").then((res) => {
       if (res.data.status) {
         setwishlist(res.data.wishlistproduct)
       }
@@ -45,7 +45,7 @@ function Navbar(){
 
 
   let addtocartitem = () => {
-    axios.get("https://freshcart-backend-9t2w.vercel.app/allcartitem").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/allcartitem").then((res) => {
       if (res.data.status) {
         setCartItems(res.data.ourcartitem)
       }

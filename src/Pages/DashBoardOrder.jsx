@@ -14,7 +14,7 @@ const DashBoardOrder = () => {
 
   const fetchCart = async () => {
     try {
-      const res = await axios.get("https://freshcart-backend-9t2w.vercel.app/allcartitem");
+      const res = await axios.get("https://freshcart1-backend.vercel.app/allcartitem");
       if (res.data.status) {
         setCartItems(res.data.ourcartitem);
         const total = res.data.ourcartitem.reduce(

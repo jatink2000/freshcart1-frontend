@@ -28,7 +28,7 @@ function ProductCard(){
   },[])
 
   let apidata=()=>{
-    axios.get("https://freshcart-backend-9t2w.vercel.app/products").then((res) => {
+    axios.get("https://freshcart1-backend.vercel.app/products").then((res) => {
           if (res.data.status) {
              setProducts(res.data.dataproduct)
           }
