@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+.userfirstname{
+    background-color: #0aad0a;
+    display: inline;
+    padding: 1px 11px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* Customize Swiper pagination bullets */
+.custom-swiper .swiper-pagination-bullet {
+  margin: -12px 8px !important; /* Adjust space between dots */
+}
+
+/* Optional: adjust pagination position if needed */
+.custom-swiper .swiper-pagination {
+  margin-top: 10px; /* space above pagination bar */
+}
+
+
+.dashboardnav{
+  position: sticky;
+  top: 0;
+}
